@@ -1,18 +1,10 @@
 import "./headingText.scss"
+import { firstWordCapital } from "../../../utils/text";
 
 const HeadingText = ({ children: text }) => {
-
-    const data = text.trim().split(" ").map((item, index) => {
-        if (index === 0) return <span
-            key={index}
-            className="heading">
-            {item}
-        </span>
-        return item
-    })
-
+    const data = firstWordCapital(text)
     return (
-        <h2>{data}</h2>
+        <h2 className="heading">{data}</h2>
     );
 }
 
