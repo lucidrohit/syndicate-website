@@ -1,0 +1,21 @@
+@forward 'scss';
+
+.box{
+    border-radius: var(--border-radius);
+    margin-bottom: 2.5rem;
+}
+
+
+.box--bg{
+    background-color: var(--color-secondary-bg);
+    padding: 1.7rem 1.4rem;
+}
+
+.App{
+    display: flex;
+}
+
+.content{
+    width: 100%;
+    padding: 2.3rem 1rem;
+}
