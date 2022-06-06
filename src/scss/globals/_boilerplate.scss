@@ -15,6 +15,27 @@ body{
     margin: 0;
     padding: 0;
     font-family: util.$font;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--color-primary-bg);
+    color: var(--color-text-active);
+    font-size: 62.5%;
+    margin-top: 2.5rem ;
 }
+
+body::before{
+    background-color: var(--color-secondary-bg);
+    content: " ";
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+::selection{
+    background-color: var(--color-secondary-bg);
+}
+
+p::selection{
+    color: var(--color-primary);
+}
+
+
