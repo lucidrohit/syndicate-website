@@ -1,6 +1,5 @@
 import "./App.scss"
 import SideBar from "./components/sideBar/sideBar";
-
 import About from "./pages/about/about"
 
 function App() {
