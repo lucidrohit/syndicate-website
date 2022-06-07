@@ -1,0 +1,23 @@
+.carousel{
+    img{
+        border-radius: var(--border-radius);
+        background-size: contain;
+        background-position: center;
+    }
+    .carousel-control-next, 
+    .carousel-control-prev {
+        width: 4rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        height: clamp(1rem, 1rem + 10vw, 5rem);
+        width: clamp(1rem, 1rem + 10vw, 5rem);
+    }
+
+
+    .carousel-indicators{
+        bottom: -2.5rem;
+    }
+
+}
