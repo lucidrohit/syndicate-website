@@ -1,3 +1,4 @@
+import Button from '../button/button'
 import './card.scss'
 
 function Card({img, head, info}) {
@@ -16,16 +17,16 @@ function Card({img, head, info}) {
                     </div>
                 </div>
                 <div className="content__info">
-                    <h3 className="info__heading">
+                    <h5 className="info__heading">
                         {head}
-                    </h3>
+                    </h5>
                     <p className="info__paragraph">
                         {info}
                     </p>
                 </div>
             </div>
                 <div className="content__registration">
-                    <button className="registration__register">Registration Open</button>
+                        <Button label={"Registerations Starts"}/>
                     <div className="register__info">
                         <p className="register__para">45 Registered</p>
                         <p className="register__para">11 Days left.</p>

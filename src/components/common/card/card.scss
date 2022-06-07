@@ -1,19 +1,30 @@
 .card {
-    width: 27.1rem;
-    height: 25.3rem;
+    width: 24.1rem;
     border-radius: 1.0rem;
     background-color: #1B1C34;
-    margin: 1.0rem;
+    margin: 0 1.0rem 1rem;
+    border: 0;
+
+    & *::selection{
+        background-color: var(--color-primary-bg);
+    }
+
+    &:first-of-type{
+        margin-left: 0;
+    }
+
+
 }
+
 img{
     width: 100%;
-    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .card__img {
-    border-radius: 1.0rem 1.0rem 0 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
     width: 100%;
-    height: 10.0rem;
     background-position: center;
     background-size: cover;
 
@@ -21,27 +32,22 @@ img{
 
 .card__content {
     display: flex;
+    padding: 1.6rem 0.8rem 0.4rem;
+
 }
 
 .content__date {
-    margin: 1.6rem .0rem .0rem .8rem;
-    border: .2rem solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 7.9rem;
-    max-height: 7.9rem;
-    min-width: 4.9rem;
-    max-width: 4.9rem;
     background: #1B1C34;
-    border: .1rem solid #C4C4C4;
+    border: 0.1rem solid var(--color-text);
     border-radius: .5rem;
+    padding: 1.7rem 1.1rem;
 }
 
 .date__month {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 1.0899rem;
     line-height: 100%;
@@ -49,58 +55,33 @@ img{
 }
 
 .date__day {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 2.68rem;
-    line-height: 100%;
     color: #8F91B2;
 }
 
 
 .info__heading {
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 600;
-    font-size: 1.47915rem;
-    line-height: 100%;
-    color: #CACCDB;
+    letter-spacing: 0.05rem;
+    color: var(--color-text-active);
     margin-left: 1.3rem;
 }
 
 .info__paragraph {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.05648rem;
-    line-height: 100%;
-    margin: 1.3rem .9rem 0 1.3rem;
-    letter-spacing: 0.04em;
+    margin-left: 1.3rem;
+    letter-spacing: 0.04rem;
     color: #8F91B2;
 }
 .content__registration{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 0.8rem;
 }
-.registration__register{
- margin: 1.9rem .0rem 1.7rem .8rem;
- width: 10.3rem;
-height: 2.2rem;
-font-family: 'Rubik';
-font-style: normal;
-font-weight: 600;
-font-size:1.075rem;
-background: #E20000;
-border-radius: 0.48rem;
-border: none;
-letter-spacing: 0.04em;
-cursor: pointer;
-color: #FFFFFF;
-}
+
+
 .register__para{
-    font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
 font-size: 0.975rem;
 letter-spacing: 0.04em;
 line-height: 100%;
