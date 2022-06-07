@@ -2,12 +2,14 @@
     width: 100%;
     display: inline-block;
     margin-bottom: 0.8rem;
+
+    .iconText__text{
+        margin-left: 0.7rem;
+        text-transform: capitalize;
+    }
+
 }
 
-.iconText__text{
-    margin-left: 0.7rem;
-    text-transform: capitalize;
-}
 .iconText:last-of-type{
     margin-bottom: 0;
 }
