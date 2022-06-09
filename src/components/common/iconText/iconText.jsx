@@ -1,13 +1,14 @@
 import "./iconText.scss"
+import { Link } from "react-router-dom";
 
-const IconText = ({icon, text}) => {
+const IconText = ({icon, text, path}) => {
+
     return ( 
-        <div className="iconText">
-
-            <i className="iconText__icon">
+        <div className="iconText iconText--active">
+            <i className="iconText__icon  ">
                 {icon}
             </i>
-            <a href="/" className="iconText__text">{text}</a>
+            <Link to={path} className="iconText__text">{text}</Link>
         </div>
      );
 }
