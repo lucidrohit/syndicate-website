@@ -1,10 +1,17 @@
 import "./iconText.scss"
 import { Link } from "react-router-dom";
 
-const IconText = ({icon, text, path}) => {
+const IconText = ({icon, text, path, setActiveClass, activeClass}) => {
 
+    const handleChangeIconText = (path)=>{
+        setActiveClass(path)
+    }
+    
     return ( 
-        <div className="iconText ">
+        <div 
+        className={"iconText " +((activeClass===path)?"iconText--active":"")}
+        onClick={()=>handleChangeIconText(path)}
+        >
             <i className="iconText__icon  ">
                 {icon}
             </i>
