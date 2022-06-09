@@ -2,10 +2,10 @@
 import "./sideBar.scss"
 import NavBar from "../navBar/navBar"
 
-const SideBar = () => {
+const SideBar = ({activeClass,setActiveClass}) => {
    return (
       <aside className="sideBar">
-         <NavBar />
+         <NavBar activeClass={activeClass} setActiveClass={setActiveClass} />
       </aside>
    );
 }

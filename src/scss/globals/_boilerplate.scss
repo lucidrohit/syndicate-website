@@ -2,7 +2,7 @@
 
 html{
     box-sizing: border-box;
-    font-size: 100%;
+    font-size: 11px;
 }
 
 *,
@@ -19,6 +19,7 @@ body{
     color: var(--color-text-active);
     font-size: 62.5%;
     margin-top: 2.5rem ;
+    width: 100vw;
     overflow-x: hidden;
 }
 

@@ -7,12 +7,11 @@ import community from "./icons/community.js"
 import home from "./icons/home.js"
 import team from "./icons/team.js"
 import events from "./icons/events.js"
-
 const navBar = [
     {
         icon: home,
         text: 'Home',
-        path:'/'
+        path:'home'
 
     },
     {
@@ -38,7 +37,8 @@ const navBar = [
 ]
 
 
-const NavBar = () => {
+const NavBar = ({activeClass,setActiveClass}) => {
+
     return (
         <div className="navbar">
             <div className="box--bg box ">
@@ -48,6 +48,8 @@ const NavBar = () => {
                         text={text}
                         path={path}
                         key={index}
+                        setActiveClass={setActiveClass}
+                        activeClass={activeClass}
                          />
                 ))
                 }
