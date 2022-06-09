@@ -1,14 +1,18 @@
 @forward 'scss';
 
 .box{
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius); 
     margin-bottom: 2.5rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 
 .box--bg{
     background-color: var(--color-secondary-bg);
-    padding: 1.7rem 1.4rem;
 }
 
 .App{
@@ -17,5 +21,10 @@
 
 .content{
     width: 100%;
-    padding: 1rem 2rem 0 0;
+    padding-top: 1rem;
+
+}
+
+.container{
+    margin-bottom: 2rem;
 }

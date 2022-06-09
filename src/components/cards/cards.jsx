@@ -18,6 +18,26 @@ let cards = [
         head: 'Recoil',
         info: 'The official media club of NIT Srinagar announces RECOIL- the eSports  tournament,  welcoming all thegamers to battle it out to be the ultimate champion.....'
     },
+    {
+        img: logo,
+        head: 'Recoil',
+        info: 'The official media club of NIT Srinagar announces RECOIL- the eSports  tournament,  welcoming all thegamers to battle it out to be the ultimate champion.....'
+    },
+    {
+        img: logo,
+        head: 'Recoil',
+        info: 'The official media club of NIT Srinagar announces RECOIL- the eSports  tournament,  welcoming all thegamers to battle it out to be the ultimate champion.....'
+    },
+    {
+        img: logo,
+        head: 'Recoil',
+        info: 'The official media club of NIT Srinagar announces RECOIL- the eSports  tournament,  welcoming all thegamers to battle it out to be the ultimate champion.....'
+    },
+    {
+        img: logo,
+        head: 'Recoil',
+        info: 'The official media club of NIT Srinagar announces RECOIL- the eSports  tournament,  welcoming all thegamers to battle it out to be the ultimate champion.....'
+    },
 
 ]
 

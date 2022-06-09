@@ -1,6 +1,9 @@
 .cards{
     display: flex;
     background-color: #111226;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    font-size: 0.8rem;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 

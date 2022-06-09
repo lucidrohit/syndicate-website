@@ -3,7 +3,34 @@ import { Carousel } from "react-bootstrap";
 
 import {useState} from "react"
 
-function CarouselComponent({list}) {
+import logo from "./carousel.svg"
+
+const list = [
+  {
+      logo: logo,
+      name: "Recoil"
+  },
+  {
+      logo: logo,
+      name: "Recoil"
+  },
+  {
+      logo: logo,
+      name: "Recoil"
+  },
+  {
+      logo: logo,
+      name: "Recoil"
+  },
+  {
+      logo: logo,
+      name: "Recoil"
+  },
+]
+
+
+
+function CarouselComponent() {
 
     const [index, setIndex] = useState(0);
 

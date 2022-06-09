@@ -1,9 +1,11 @@
 .card {
-    width: 24.1rem;
+    width: 27rem;
+    min-width: 26rem;
     border-radius: 1.0rem;
     background-color: #1B1C34;
-    margin: 0 1.0rem 1rem;
+    margin: 0 1.3rem 1rem;
     border: 0;
+    padding-bottom: 0.5rem;
 
     & *::selection{
         background-color: var(--color-primary-bg);
@@ -44,7 +46,8 @@ img{
     background: #1B1C34;
     border: 0.1rem solid var(--color-text);
     border-radius: .5rem;
-    padding: 1.7rem 1.1rem;
+    padding: 1.3rem 1.1rem;
+
 }
 
 .date__month {
@@ -63,7 +66,7 @@ img{
 
 .info__heading {
     font-weight: 600;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.1rem;
     color: var(--color-text-active);
     margin-left: 1.3rem;
 }
@@ -72,6 +75,8 @@ img{
     margin-left: 1.3rem;
     letter-spacing: 0.04rem;
     color: #8F91B2;
+    font-size: 1.1rem;
+    line-height: 1.3rem
 }
 .content__registration{
     display: flex;
@@ -82,9 +87,11 @@ img{
 
 
 .register__para{
-font-size: 0.975rem;
-letter-spacing: 0.04em;
-line-height: 100%;
-color: #C4C4C4;
-margin: 1.0rem 1.1rem;
+color: var(--color-text-active);
+
+    margin: 0.6rem 1.1rem;
+}
+
+.register__para::selection{
+    color: white;
 }
