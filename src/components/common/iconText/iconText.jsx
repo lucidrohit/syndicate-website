@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const IconText = ({icon, text, path}) => {
 
     return ( 
-        <div className="iconText iconText--active">
+        <div className="iconText ">
             <i className="iconText__icon  ">
                 {icon}
             </i>
