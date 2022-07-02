@@ -12,7 +12,7 @@ import {useState} from "react"
 
 
 function App() {
-const [activeClass, setActiveClass] = useState('home')
+const [activeClass, setActiveClass] = useState( window.location.pathname.slice(1, window.location.pathname.length) || 'home')
 
   return (
     <div className="App">
