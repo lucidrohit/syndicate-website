@@ -3,7 +3,7 @@ import "./community.scss"
 const Community = () => {
     return ( 
         <div className="community">
-            community
+            <h1>Community</h1>
         </div>
      );
 }
