@@ -3,7 +3,8 @@ import { Carousel } from "react-bootstrap";
 
 import {useState} from "react"
 
-import logo from "./carousel.svg"
+import logo from "../../../assets/imgs/carousel.webp"
+
 
 const list = [
   {

@@ -1,6 +1,6 @@
 import "./cards.scss"
 import Card from "../common/card/card"
-import logo from "./logo.svg"
+import logo from "../../assets/imgs/carousel.webp"
 
 let cards = [
     {
