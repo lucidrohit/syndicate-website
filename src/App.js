@@ -12,9 +12,11 @@ import { useState } from "react";
 
 function App() {
   const location = useLocation();
-  const currentActivePath = location.pathname.slice(1,location.pathname.length)
-  const [activeClass, setActiveClass] = useState(currentActivePath);
-
+  const currentActivePath = location.pathname.slice(
+    1,
+    location.pathname.length
+  );
+  const [activeClass, setActiveClass] = useState(currentActivePath.trim()===""?"home":currentActivePath);
   return (
     <div className="App">
       <SideBar activeClass={activeClass} setActiveClass={setActiveClass} />
@@ -24,7 +26,7 @@ function App() {
           <CarouselComponent />
         </div>
         <Routes>
-          <Route path={"home" || "/"} index element={<Home />} />
+          <Route path="home" index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="community" element={<Community />} />
           <Route path="team" element={<Team />} />
