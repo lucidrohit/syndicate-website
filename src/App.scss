@@ -20,8 +20,11 @@
 }
 
 .content{
-    width: 100%;
+    width: fit-content;
     padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+
 
 }
 
