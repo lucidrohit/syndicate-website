@@ -27,11 +27,8 @@
     transition: all 0.1s ease;
 }
 
-.iconText:last-of-type{
-    margin-bottom: 0;
-}
 
-.iconText--active, .iconText:hover{
+.iconText.active, .iconText:hover{
     border-left: 0.25rem solid var(--color-text-active);
     color: var(--color-text-active);
 

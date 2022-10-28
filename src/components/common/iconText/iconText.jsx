@@ -1,23 +1,13 @@
-import "./iconText.scss"
-import { Link } from "react-router-dom";
+import "./iconText.scss";
+import { NavLink } from "react-router-dom";
 
-const IconText = ({icon, text, path, setActiveClass, activeClass}) => {
+const IconText = ({ icon, text, path }) => {
+  return (
+    <NavLink className="iconText" to={path}>
+      <i className="iconText__icon  ">{icon}</i>
+      <span className="iconText__text">{text}</span>
+    </NavLink>
+  );
+};
 
-    const handleChangeIconText = (path)=>{
-        setActiveClass(path)
-    }
-    
-    return ( 
-        <div 
-        className={"iconText " +((activeClass===path)?"iconText--active":"")}
-        onClick={()=>handleChangeIconText(path)}
-        >
-            <i className="iconText__icon  ">
-                {icon}
-            </i>
-            <Link to={path} className="iconText__text">{text}</Link>
-        </div>
-     );
-}
- 
 export default IconText;
