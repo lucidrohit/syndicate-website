@@ -7,7 +7,7 @@ export function firstWordCapital(text){
             className="heading__first">
             {item}
         </span>
-        return item 
+        return item  
     })
 }
 

@@ -1,13 +1,14 @@
+import "./sideBar.scss";
+import NavBar from "../navBar/navBar";
+import UserProfile from "../userProfile/userProfile";
 
-import "./sideBar.scss"
-import NavBar from "../navBar/navBar"
-
-const SideBar = ({activeClass,setActiveClass}) => {
-   return (
-      <aside className="sideBar">
-         <NavBar activeClass={activeClass} setActiveClass={setActiveClass} />
-      </aside>
-   );
-}
+const SideBar = ({ isNav }) => {
+  return (
+    <aside className={"sideBar " + (isNav ? "active" : null)}>
+      <UserProfile />
+      <NavBar />
+    </aside>
+  );
+};
 
 export default SideBar;

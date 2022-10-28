@@ -1,33 +1,78 @@
-@forward 'scss';
+@forward "scss";
 
-.box{
-    border-radius: var(--border-radius); 
-    margin-bottom: 2.5rem;
-    padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.box {
+  border-radius: var(--border-radius);
+  margin-bottom: 2.5rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box--bg {
+  background-color: var(--color-secondary-bg);
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: baseline;
+  padding-left: 0.5rem;
+}
+
+.container {
+  max-width: 100rem;
+  width: 80vw;
 }
 
 
-.box--bg{
-    background-color: var(--color-secondary-bg);
+@media (min-width: 900px) {
+    .hamburger{
+        display: none;
+      }
+}
+@media (max-width: 900px) {
+  .content {
+    grid-column: span 6 !important;
+    top: 4.3rem !important;
+    width: unset !important;
+    .container {
+      min-width: fit-content !important;
+      margin: unset auto !important;
+      margin-left: 0 !important;
+    }
+    .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+        margin-left: 0;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
 
-.App{
-    display: flex;
+@media (max-width: 690px) {
+  .content {
+    .container {
+      .cards {
+        justify-content: center;
+        .card {
+          max-width: 40rem !important;
+          min-width: fit-content !important;
+          height: 27rem !important;
+        }
+      }
+    }
+  }
 }
 
-.content{
-    width: fit-content;
-    padding-top: 1.3rem;
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-.container{
-    margin-bottom: 5rem;
+@media (max-width: 350px) {
+  .card{
+    width: fit-content !important;
+    &__img{
+      height: 8rem !important;
+    }
+  }
 }

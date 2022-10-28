@@ -13,7 +13,7 @@ html{
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     font-family: util.$font;
     background-color: var(--color-primary-bg);
     color: var(--color-text-active);
@@ -46,6 +46,9 @@ p::selection{
 
 }
 
+.aside{
+    width: fit-content;
+}
 
 
 ::-webkit-scrollbar-track {
