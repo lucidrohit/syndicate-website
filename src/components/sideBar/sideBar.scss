@@ -3,14 +3,15 @@
     z-index: 3;
     position: absolute;
     background-color: var(--color-primary-bg);
-    transform: translateX(110vw) translateY(-17vh);
+    transform: rotateY(90deg) translateY(-17vh);
     height: 120vh;
     width: 100vw;
-    padding: 10rem 10rem;
+    padding: 15rem 10rem;
     display: flex;
     align-items: center;
     transition: 0.2s all ease-in-out;
     overflow: hidden;
+    transform-origin: right;
     .navbar,
     .userProfile {
       max-width: unset !important;
@@ -18,7 +19,7 @@
   }
 
   .sideBar.active {
-    transform: translateX(0vw) translateY(-17vh);
+    transform: rotateY(0) translateY(-17vh);
     padding: auto 2rem;
     padding-right: 0;
     border: 5px solid var(--color-secondary-bg);
